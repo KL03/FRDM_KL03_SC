@@ -1,0 +1,16 @@
+.\platinum.o: ..\..\..\src\projects\platinum\platinum.c
+.\platinum.o: ..\..\..\src\common\common.h
+.\platinum.o: ..\..\..\src\projects\platinum\isr.h
+.\platinum.o: ..\..\..\src\cpu\arm_cm0.h
+.\platinum.o: ..\..\..\src\platforms\freedom.h
+.\platinum.o: ..\..\..\src\drivers\mcg\mcg_lite.h
+.\platinum.o: ..\..\..\src\cpu\headers\MKL03Z4.h
+.\platinum.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\platinum.o: ..\..\..\src\common\assert.h
+.\platinum.o: ..\..\..\src\common\io.h
+.\platinum.o: ..\..\..\src\common\stdlib.h
+.\platinum.o: ..\..\..\src\drivers\gpio\MKL_gpio.h
+.\platinum.o: ..\..\..\src\drivers\uart\uart.h
+.\platinum.o: ..\..\..\src\drivers\lptmr\lptmr.h
+.\platinum.o: ..\..\..\src\drivers\I2C\hal_dev_mma8451.h
+.\platinum.o: ..\..\..\src\drivers\smc\smc.h
