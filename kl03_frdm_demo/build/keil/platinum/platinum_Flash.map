@@ -326,7 +326,6 @@ Removing Unused input sections from the image.
     Removing queue.o(.text), (92 bytes).
     Removing stdlib.o(.text), (708 bytes).
     Removing nmi_isr_handler.o(.text), (72 bytes).
-    Removing sysinit.o(.data), (4 bytes).
     Removing retarget.o(.data), (4 bytes).
     Removing smc.o(.text), (596 bytes).
     Removing dadd.o(.text), (356 bytes).
@@ -337,7 +336,7 @@ Removing Unused input sections from the image.
     Removing depilogue.o(.text), (190 bytes).
     Removing depilogue.o(i.__ARM_clz), (46 bytes).
 
-25 unused section(s) (total 4386 bytes) removed from the image.
+24 unused section(s) (total 4382 bytes) removed from the image.
 
 ==============================================================================
 
@@ -669,50 +668,50 @@ Memory Map of the image
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x00000000   0x000000c0   Data   RO           67    RESET               startup_mkl03z4.o
-    0x000000c0   0x00000000   Code   RO          378  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
-    0x000000c0   0x00000004   Code   RO          646    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
-    0x000000c4   0x00000004   Code   RO          649    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
-    0x000000c8   0x00000000   Code   RO          651    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
-    0x000000c8   0x00000000   Code   RO          653    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
-    0x000000c8   0x00000008   Code   RO          654    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
-    0x000000d0   0x00000000   Code   RO          656    .ARM.Collect$$$$0000000D  mc_p.l(entry10a.o)
-    0x000000d0   0x00000000   Code   RO          658    .ARM.Collect$$$$0000000F  mc_p.l(entry11a.o)
-    0x000000d0   0x00000004   Code   RO          647    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
+    0x000000c0   0x00000000   Code   RO          379  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
+    0x000000c0   0x00000004   Code   RO          647    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
+    0x000000c4   0x00000004   Code   RO          650    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
+    0x000000c8   0x00000000   Code   RO          652    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
+    0x000000c8   0x00000000   Code   RO          654    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
+    0x000000c8   0x00000008   Code   RO          655    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
+    0x000000d0   0x00000000   Code   RO          657    .ARM.Collect$$$$0000000D  mc_p.l(entry10a.o)
+    0x000000d0   0x00000000   Code   RO          659    .ARM.Collect$$$$0000000F  mc_p.l(entry11a.o)
+    0x000000d0   0x00000004   Code   RO          648    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
     0x000000d4   0x00000238   Code   RO            1    .text               platinum.o
     0x0000030c   0x00000028   Code   RO           69    .text               startup_mkl03z4.o
     0x00000334   0x00000024   Code   RO          127    .text               io.o
     0x00000358   0x000000a4   Code   RO          217    .text               sysinit.o
-    0x000003fc   0x00000002   Code   RO          688    i.__scatterload_null  mc_p.l(handlers.o)
+    0x000003fc   0x00000002   Code   RO          689    i.__scatterload_null  mc_p.l(handlers.o)
     0x000003fe   0x00000002   PAD
     0x00000400   0x00000010   Code   RO           68    .ARM.__at_0x400     startup_mkl03z4.o
     0x00000410   0x0000054a   Code   RO          194    .text               start.o
     0x0000095a   0x00000002   PAD
-    0x0000095c   0x000001b0   Code   RO          233    .text               arm_cm0.o
-    0x00000b0c   0x0000006c   Code   RO          245    .text               uart.o
-    0x00000b78   0x00000334   Code   RO          257    .text               rcm.o
-    0x00000eac   0x0000002e   Code   RO          269    .text               retarget.o
+    0x0000095c   0x000001b0   Code   RO          234    .text               arm_cm0.o
+    0x00000b0c   0x0000006c   Code   RO          246    .text               uart.o
+    0x00000b78   0x00000334   Code   RO          258    .text               rcm.o
+    0x00000eac   0x0000002e   Code   RO          270    .text               retarget.o
     0x00000eda   0x00000002   PAD
-    0x00000edc   0x00000020   Code   RO          298    .text               serial.o
-    0x00000efc   0x00000038   Code   RO          313    .text               mcg_lite.o
-    0x00000f34   0x00000070   Code   RO          325    .text               lptmr.o
-    0x00000fa4   0x00000124   Code   RO          338    .text               hal_dev_mma8451.o
-    0x000010c8   0x000000c8   Code   RO          353    .text               hal_i2c.o
-    0x00001190   0x0000002c   Code   RO          381    .text               mc_p.l(uidiv.o)
-    0x000011bc   0x00000028   Code   RO          383    .text               mc_p.l(idiv.o)
-    0x000011e4   0x00000060   Code   RO          660    .text               mc_p.l(uldiv.o)
-    0x00001244   0x00000024   Code   RO          673    .text               mc_p.l(init.o)
-    0x00001268   0x00000020   Code   RO          675    .text               mc_p.l(llshl.o)
-    0x00001288   0x00000022   Code   RO          677    .text               mc_p.l(llushr.o)
+    0x00000edc   0x00000020   Code   RO          299    .text               serial.o
+    0x00000efc   0x00000038   Code   RO          314    .text               mcg_lite.o
+    0x00000f34   0x00000070   Code   RO          326    .text               lptmr.o
+    0x00000fa4   0x00000124   Code   RO          339    .text               hal_dev_mma8451.o
+    0x000010c8   0x000000c8   Code   RO          354    .text               hal_i2c.o
+    0x00001190   0x0000002c   Code   RO          382    .text               mc_p.l(uidiv.o)
+    0x000011bc   0x00000028   Code   RO          384    .text               mc_p.l(idiv.o)
+    0x000011e4   0x00000060   Code   RO          661    .text               mc_p.l(uldiv.o)
+    0x00001244   0x00000024   Code   RO          674    .text               mc_p.l(init.o)
+    0x00001268   0x00000020   Code   RO          676    .text               mc_p.l(llshl.o)
+    0x00001288   0x00000022   Code   RO          678    .text               mc_p.l(llushr.o)
     0x000012aa   0x00000002   PAD
-    0x000012ac   0x00000020   Code   RO          592    i.__0printf$8       mc_p.l(printf8.o)
+    0x000012ac   0x00000020   Code   RO          593    i.__0printf$8       mc_p.l(printf8.o)
     0x000012cc   0x0000001a   Code   RO          203    i.__ARM_common_switch8  start.o
-    0x000012e6   0x0000000e   Code   RO          687    i.__scatterload_copy  mc_p.l(handlers.o)
-    0x000012f4   0x0000000e   Code   RO          689    i.__scatterload_zeroinit  mc_p.l(handlers.o)
+    0x000012e6   0x0000000e   Code   RO          688    i.__scatterload_copy  mc_p.l(handlers.o)
+    0x000012f4   0x0000000e   Code   RO          690    i.__scatterload_zeroinit  mc_p.l(handlers.o)
     0x00001302   0x00000002   PAD
-    0x00001304   0x00000428   Code   RO          599    i._printf_core      mc_p.l(printf8.o)
-    0x0000172c   0x00000020   Code   RO          600    i._printf_post_padding  mc_p.l(printf8.o)
-    0x0000174c   0x0000002c   Code   RO          601    i._printf_pre_padding  mc_p.l(printf8.o)
-    0x00001778   0x00000020   Data   RO          685    Region$$Table       anon$$obj.o
+    0x00001304   0x00000428   Code   RO          600    i._printf_core      mc_p.l(printf8.o)
+    0x0000172c   0x00000020   Code   RO          601    i._printf_post_padding  mc_p.l(printf8.o)
+    0x0000174c   0x0000002c   Code   RO          602    i._printf_pre_padding  mc_p.l(printf8.o)
+    0x00001778   0x00000020   Data   RO          686    Region$$Table       anon$$obj.o
 
 
     Execution Region RW_IRAM1 (Base: 0x1ffffe00, Size: 0x00000000, Max: 0x00000200, ABSOLUTE)
@@ -727,7 +726,7 @@ Memory Map of the image
     0x20000000   0x00000002   Data   RW            2    .data               platinum.o
     0x20000002   0x00000002   PAD
     0x20000004   0x00000014   Data   RW          218    .data               sysinit.o
-    0x20000018   0x00000004   Data   RW          270    .data               retarget.o
+    0x20000018   0x00000004   Data   RW          271    .data               retarget.o
     0x2000001c   0x00000004   PAD
     0x20000020   0x00000100   Zero   RW           65    STACK               startup_mkl03z4.o
 
@@ -751,11 +750,11 @@ Image component sizes
         32          6          0          0          0        686   serial.o
       1380        996          0          0          0       1721   start.o
         56         30        192          0        256        952   startup_mkl03z4.o
-       164         30          0         20          0       1029   sysinit.o
+       164         30          0         20          0        989   sysinit.o
        108          8          0          0          0       1275   uart.o
 
     ----------------------------------------------------------------------
-      4306       1982        224         28        260     127268   Object Totals
+      4306       1982        224         28        260     127228   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          4          0          0          2          4          0   (incl. Padding)
 
@@ -800,8 +799,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      5816       2050        224         28        260     126812   Grand Totals
-      5816       2050        224         28        260     126812   ELF Image Totals
+      5816       2050        224         28        260     126772   Grand Totals
+      5816       2050        224         28        260     126772   ELF Image Totals
       5816       2050        224         28          0          0   ROM Totals
 
 ==============================================================================

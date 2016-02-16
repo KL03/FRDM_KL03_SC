@@ -382,8 +382,8 @@ ARM Macro Assembler    Page 6
   233 000000C0         ;       <0=> Boot from Flash
   234 000000C0         ;       <2=> Boot from ROM
   235 000000C0         ;       <3=> Boot from ROM
-  236 000000C0 0000003D 
-                       FOPT    EQU              0x3D
+  236 000000C0 00000039 
+                       FOPT    EQU              0x39
   237 000000C0         ;   </h>
   238 000000C0         ;   <h> Flash security byte (FSEC)
   239 000000C0         ;     <i> WARNING: If SEC field is configured as "MCU se
@@ -438,7 +438,7 @@ rK6, BackDoorK7
   268 00000008 FF FF FF 
               FF               DCB              FPROT0,     FPROT1,     FPROT2,
      FPROT3
-  269 0000000C FE 3D FF 
+  269 0000000C FE 39 FF 
               FF               DCB              FSEC,       FOPT,       0xFF,  
    0xFF
   270 00000010                 ENDIF
@@ -1259,7 +1259,7 @@ Absolute symbols
    Uses
       At line 267 in file ..\startup_s\startup_MKL03Z4.s
 Comment: BackDoorK7 used once
-FOPT 0000003D
+FOPT 00000039
 
 Symbol: FOPT
    Definitions

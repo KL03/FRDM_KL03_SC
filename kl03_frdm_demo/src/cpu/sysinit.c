@@ -18,7 +18,6 @@ int mcg_clk_hz;
 int mcg_clk_khz;
 int core_clk_khz;
 int periph_clk_khz;
-int pll_clk_khz;
 int uart0_clk_khz;
 
 /********************************************************************/
@@ -49,7 +48,7 @@ void sysinit (void)
 #endif
 		
 		/*
-					 * Use the value obtained from the pll_init function to define variables
+		 * Use the value obtained from the pll_init function to define variables
 		 * for the core clock in kHz and also the peripheral clock. These
 		 * variables can be used by other functions that need awareness of the
 		 * system frequency.

@@ -16,9 +16,9 @@ void InitADC( void )
 {
 	SIM_SCGC6 |= SIM_SCGC6_ADC0_MASK;  // enable ADC0 clock
 
-  	ADC0_CFG1 = ADC_CFG1_ADIV(1)|
-  				ADC_CFG1_MODE(2)|
-  				ADC_CFG1_ADICLK(3);
+  	ADC0_CFG1 |=  ADC_CFG1_ADIV(1)			/*输入时钟2分频*/
+								| ADC_CFG1_MODE(1)			/*12bit模式*/
+								| ADC_CFG1_ADICLK(3);		/*使用ADC内部时钟*/
   	
 }
         
