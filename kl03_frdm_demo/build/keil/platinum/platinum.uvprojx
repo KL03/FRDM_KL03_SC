@@ -369,7 +369,7 @@
               <MiscControls></MiscControls>
               <Define>KEIL FREEDOM CMSIS</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\..\src\projects\platinum;..\..\..\src\common;..\..\..\src\cpu;..\..\..\src\cpu\headers;..\..\..\src\drivers\lptmr;..\..\..\src\drivers\mcg;..\..\..\src\drivers\pmc;..\..\..\src\drivers\rcm;..\..\..\src\drivers\smc;..\..\..\src\drivers\uart;..\..\..\src\drivers\cmp;..\..\..\src\platforms;..\..;..\startup_s;..\..\..\src\drivers\gpio;..\..\..\src\drivers\lptmr;..\..\..\src\drivers\I2C;..\..\..\src\drivers\smc</IncludePath>
+              <IncludePath>..\..\..\src\projects\platinum;..\..\..\src\common;..\..\..\src\cpu;..\..\..\src\cpu\headers;..\..\..\src\drivers\lptmr;..\..\..\src\drivers\mcg;..\..\..\src\drivers\pmc;..\..\..\src\drivers\rcm;..\..\..\src\drivers\smc;..\..\..\src\drivers\uart;..\..\..\src\drivers\cmp;..\..\..\src\platforms;..\..;..\startup_s;..\..\..\src\drivers\gpio;..\..\..\src\drivers\lptmr;..\..\..\src\drivers\I2C;..\..\..\src\drivers\smc;..\..\..\src\projects</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
