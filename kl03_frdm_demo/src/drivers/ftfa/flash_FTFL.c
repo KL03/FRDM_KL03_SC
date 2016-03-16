@@ -47,6 +47,7 @@
  *******************************************************************************/
 void Flash_Init(unsigned char FlashClockDiv)
 {
+		MCM_PLACR |= MCM_PLACR_ESFC_MASK;   // 0xF000300C, PLACR, /**< Platform Control Register, offset: 0xC */
     /* Body */
 //    UNUSED(FlashClockDiv)
     /* checking access error */
